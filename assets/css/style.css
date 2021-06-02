@@ -182,7 +182,6 @@ textarea:focus,
 }
 
 .template-7_banner {
-    margin-bottom: 40px;
     padding-top: 190px;
     padding-bottom: 60px;
     background-position: bottom center;
@@ -442,6 +441,7 @@ textarea:focus,
     font-weight: 500;
     font-size: .9em;
     min-width: 60px;
+    margin: 0 4px;
 }
 
 .template-7_readmore {
@@ -556,6 +556,113 @@ textarea:focus,
 .template-7_number .number-item .text {
     font-size: 1.1em;
     color: var(--color-dark-75);
+}
+
+.template-7_roadmap .roadmap-main {
+    position: relative;
+}
+
+.template-7_roadmap .roadmap-main:before {
+    content: '';
+    background-color: var(--color-white-75);
+    height: 100%;
+    width: 7px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item {
+    width: 50%;
+    padding: 0 15px 0 40px;
+    margin: 0 0 30px auto;
+    position: relative;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item:after {
+    content: '';
+    background-color: var(--primary-color);
+    height: 100px;
+    width: 6px;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item .roadmap-inner {
+    color: var(--color-dark-50);
+    background-color: var(--color-white);
+    text-align: center;
+    display: block;
+    position: relative
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item .roadmap-inner .roadmap-year {
+    color: var(--color-white);
+    background: var(--primary-color);
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 70px;
+    width: 70px;
+    border: 6px solid var(--color-white);
+    border-right: none;
+    box-shadow: 8px 0 0 var(--color-white), 0 0 0 8px var(--primary-color);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: -76px;
+    z-index: 1;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item .roadmap-inner .roadmap-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item .roadmap-inner .roadmap-wrap .roadmap-title {
+    color: var(--color-white);
+    background: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+
+.template-7_roadmap .roadmap-main .roadmap-item .roadmap-inner .roadmap-wrap .roadmap-content {
+    padding: 10px 20px;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item:nth-of-type(even) {
+    padding: 0 40px 0 15px;
+    margin: 0 auto 30px 0;
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item:nth-of-type(even) .roadmap-inner .roadmap-year {
+    left: unset;
+    right: -76px;
+    box-shadow: -8px 0 0 var(--color-white), 0 0 0 8px var(--primary-color);
+    border-left: 0;
+    border-right: 6px solid var(--color-white);
+}
+
+.template-7_roadmap .roadmap-main .roadmap-item:nth-of-type(even):after {
+    right: unset;
+    left: 0;
+}
+
+.main-timeline .description {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 .template-7_cta {
