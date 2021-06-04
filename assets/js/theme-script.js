@@ -56,7 +56,7 @@ var changeCoin = function (elm) {
 	let img = elm.data('image'),
 		name = elm.data('name');
 	
-	elm.parents('#form-coin .group-item').find('.call-dropdownCoin img').prop('src', img);
-	elm.parents('#form-coin .group-item').find('.call-dropdownCoin .title').text(name);
-	elm.parents('#form-coin .dropdown-coin').removeClass('show');
+	elm.parents('.form-coin .group-item').find('.call-dropdownCoin img').prop('src', img);
+	elm.parents('.form-coin .group-item').find('.call-dropdownCoin .title').text(name);
+	elm.parents('.form-coin .dropdown-coin').removeClass('show');
 }
