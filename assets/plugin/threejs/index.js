@@ -21,7 +21,10 @@ function init() {
 	container = document.createElement('div');
 	var main = document.body.appendChild(container);
 	container.className = "wave-poistion";
-	document.getElementById('template-wave').append(main);
+	var elmAppend = document.getElementById('template-wave');
+	if (elmAppend != null || elmAppend != undefined) {
+		elmAppend.append(main);
+	}
 	
 	camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
 	camera.position.z = 10000;

@@ -647,6 +647,10 @@ body::-webkit-scrollbar-track-piece,
     color: var(--color-white);
 }
 
+.template-7_banner .form .inner .body .top .btn:hover {
+    background: var(--primary-hover-sub);
+}
+
 .template-7_banner .form .inner .body .bottom {
     margin: 5px;
     text-align: center;
@@ -1305,4 +1309,199 @@ body::-webkit-scrollbar-track-piece,
 .template-7_timeline .timeline-main .timeline:nth-child(2n) .timeline-content {
     padding: 20px 50px 20px 0;
     text-align: right;
+}
+
+.template-7_account {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 70px;
+}
+
+.template-7_account:before {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    content: "";
+    width: 100%;
+    z-index: 11;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../images/home.png);
+}
+
+.template-7_account .background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    min-width: 1920px;
+    user-select: none;
+    transform: translateX(-50%);
+    background: linear-gradient(
+            90deg, var(--primary-color), var(--primary-hover));
+    min-height: 300px;
+    max-height: 770px;
+}
+
+.template-7_account .background > svg {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    float: left;
+}
+
+.template-7_account .background > svg > .svg-banner-shape {
+    fill: var(--color-white);
+}
+
+.template-7_account .account-main {
+    position: relative;
+    z-index: 21;
+    padding-top: 220px;
+}
+
+.template-7_account .account-box {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%), 0 8px 64px 0 rgb(10 14 29 / 8%);
+    border-radius: 3px;
+    min-height: 450px;
+    align-items: center;
+}
+
+.template-7_account .account-box .account__content {
+    width: 100%;
+    padding: 36px 56px 48px;
+}
+
+.template-7_account .account-box .account__content .account__title {
+    font-size: 2.8em;
+    color: var(--primary-hover);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.template-7_account .account-box .account__content .account__desc {
+    margin-top: -35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--color-dark-75);
+}
+
+.template-7_account .account-box .account__content form {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.template-7_account .account-box .account__content .account__group {
+    color: var(--color-dark-50);
+    border: 1px solid var(--color-white-75);
+    background-color: var(--color-white);
+    box-shadow: none;
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-radius: 3px;
+    font-size: 17px;
+    transition: border .3s linear;
+    padding: 0 !important;
+}
+
+.template-7_account .account-box .account__content .account__group .account__label {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template-7_account .account-box .account__content .account__group .account__label:first-of-type {
+    margin-left: 16px;
+}
+
+.template-7_account .account-box .account__content .account__group .account__label svg {
+    width: 24px;
+    height: 24px;
+}
+
+.template-7_account .account-box .account__content .account__group .account__label svg .stroke {
+    fill: none;
+    stroke: #8692b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: .3s ease;
+}
+
+.template-7_account .account-box .account__content .account__group .account__label svg .fill {
+    fill: #8692b0;
+    transition: .3s ease;
+}
+
+.template-7_account .account-box .account__content .account__group .account__input {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    transition: border .3s linear;
+    appearance: none;
+    display: block;
+    box-shadow: none;
+    line-height: 1.42857143;
+    font-weight: inherit;
+    padding: 0px 15px;
+    color: var(--color-dark-50);
+    font-size: 15px;
+    border-radius: 3px;
+    vertical-align: middle;
+    min-height: 100%;
+    border: none !important;
+    background: transparent !important;
+    height: auto;
+    flex: 1 1 auto;
+}
+
+.template-7_account .account-box .account__content .account__group .account__input:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.template-7_account .account-box .account__content .account__button button {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+    background: var(--primary-hover);
+    color: var(--color-white);
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 24px;
+    height: 56px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+
+.template-7_account .account-box .account__content .account__button button:hover {
+    background: var(--primary-hover-sub);
+}
+
+.template-7_account .account-box .account__content .account__text {
+    color: var(--color-dark-50);
+}
+
+.color-inherit {
+    color: inherit;
 }
