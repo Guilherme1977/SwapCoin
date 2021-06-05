@@ -345,6 +345,7 @@ body::-webkit-scrollbar-track-piece,
     width: 100%;
     background: var(--color-white);
     overflow: hidden;
+    border-radius: 5px 5px 0 0;
 }
 
 .template-7_banner .form .inner .header .nav {
