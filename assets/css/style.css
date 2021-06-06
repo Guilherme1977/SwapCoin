@@ -367,6 +367,7 @@ body::-webkit-scrollbar-track-piece,
         transform: translate(20px, 0px);
         background-color: rgba(15, 23, 55, 0.53);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         transition: .3s all ease-in-out;
         transform-origin: top;
         opacity: 0;
@@ -496,6 +497,7 @@ body::-webkit-scrollbar-track-piece,
         z-index: 5;
         background-color: rgba(15, 23, 55, 0.53);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         transition: .5s all ease-in-out;
         transform-origin: top;
         opacity: 0;
@@ -1555,6 +1557,14 @@ body::-webkit-scrollbar-track-piece,
 @media screen and (min-width: 575px) {
     .template-7_footer .dropdown-language .dropdown-menu {
         width: 408px;
+        -webkit-columns: 2;
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .template-7_footer .dropdown-language .dropdown-menu {
+        width: 320px;
         -webkit-columns: 2;
         column-count: 2;
     }
