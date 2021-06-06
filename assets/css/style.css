@@ -465,6 +465,10 @@ body::-webkit-scrollbar-track-piece,
         animation-direction: reverse;
     }
 
+    .template-7_header .logo #hamburger.before i {
+        animation: none !important;
+    }
+
     .template-7_header.active .logo #hamburger i:nth-child(1) {
         -webkit-animation: inTop 0.5s forwards;
         animation: inTop 0.5s forwards;
@@ -494,6 +498,8 @@ body::-webkit-scrollbar-track-piece,
         backdrop-filter: blur(10px);
         transition: .5s all ease-in-out;
         transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .template-7_header .menu > ul > li:not(.menu-button) > a {
@@ -554,6 +560,10 @@ body::-webkit-scrollbar-track-piece,
         background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
     }
 
+    .template-7_header.active .menu {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .template-7_wrapper {

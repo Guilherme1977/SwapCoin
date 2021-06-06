@@ -18,6 +18,13 @@ var changeCoin = function (elm) {
 
 const callMenu = function (elm) {
 	let parentElm = elm.closest('#header');
+	if ($('#hamburger').hasClass('before')) {
+		$('#hamburger').removeClass('before');
+	}
+	if ($('#navigation').hasClass('d-none')) {
+		$('#navigation').removeClass('d-none');
+	}
+	
 	if (parentElm.hasClass('active')) {
 		parentElm.removeClass('active');
 	} else {
