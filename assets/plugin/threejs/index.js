@@ -18,11 +18,11 @@ animate();
 
 function init() {
 	
-	container = document.createElement('div');
-	var main = document.body.appendChild(container);
-	container.className = "wave-poistion";
 	var elmAppend = document.getElementById('template-wave');
 	if (elmAppend != null || elmAppend != undefined) {
+		container = document.createElement('div');
+		var main = document.body.appendChild(container);
+		container.className = "wave-poistion";
 		elmAppend.append(main);
 	}
 	
@@ -65,7 +65,10 @@ function init() {
 	renderer = new THREE.CanvasRenderer();
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(window.innerWidth, window.innerHeight);
-	container.appendChild(renderer.domElement);
+	var elmAppend = document.getElementById('template-wave');
+	if (elmAppend != null || elmAppend != undefined) {
+		container.appendChild(renderer.domElement);
+	}
 	
 	
 	//
