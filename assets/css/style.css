@@ -577,7 +577,8 @@ body::-webkit-scrollbar-track-piece,
     padding-top: 190px;
     padding-bottom: 60px;
     position: relative;
-    background: #050918;
+    /*background: #050918;*/
+    background: #1b334b;
 }
 
 .template-7_banner:before {
@@ -1882,7 +1883,7 @@ body::-webkit-scrollbar-track-piece,
     user-select: none;
     transform: translateX(-50%);
     background: linear-gradient(
-            90deg, var(--primary-color), var(--primary-hover));
+            90deg, #274d72, #1b334b);
     min-height: 300px;
     max-height: 770px;
 }

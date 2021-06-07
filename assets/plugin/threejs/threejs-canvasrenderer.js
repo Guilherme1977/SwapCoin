@@ -61,7 +61,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 			alpha: parameters.alpha === true
 		} ),
 		
-		_clearColor = new THREE.Color( 0x050918 ),
+		_clearColor = new THREE.Color( 0x1b334b ),
 		_clearAlpha = parameters.alpha === true ? 0 : 1,
 		
 		_contextGlobalAlpha = 1,
