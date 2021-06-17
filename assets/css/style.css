@@ -320,7 +320,8 @@ body::-webkit-scrollbar-track-piece,
     .template-7_header .navigation .menu > ul {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        width: 100%;
     }
 
     .template-7_header .navigation .menu > ul > li {
@@ -374,6 +375,7 @@ body::-webkit-scrollbar-track-piece,
         visibility: hidden;
     }
 
+
     .template-7_header .navigation .menu > ul > li > ul > li > a {
         padding: 10px 15px;
         display: block;
@@ -407,8 +409,15 @@ body::-webkit-scrollbar-track-piece,
         border-bottom: 1px dashed var(--color-gray-50);
     }
 
+
+    .template-7_header .navigation .menu > ul > li.ml-auto > ul {
+        left: unset;
+        right: 0;
+        transform: translate(-20px, 0px);
+    }
+
     .template-7_header .navigation .menu > ul > li:hover > ul {
-        transform: translate(0px, 0px);
+        transform: translate(0px, 0px) !important;
         visibility: visible;
         opacity: 1;
     }
@@ -515,16 +524,19 @@ body::-webkit-scrollbar-track-piece,
         letter-spacing: 0.5px;
         position: relative;
     }
-
-    .template-7_header .menu > ul > li:not(.menu-button) > a > i {
+    .template-7_header .menu > ul > li:not(.menu-button) > a > i.fa-user-alt {
+        margin-top: -2px;
+    }
+    .template-7_header .menu > ul > li:not(.menu-button) > a > i.fa-caret-down {
         font-weight: 300;
+        margin-left: auto;
     }
 
-    .template-7_header .menu > ul > li:not(.menu-button) > a > i:before {
+    .template-7_header .menu > ul > li:not(.menu-button) > a > i.fa-caret-down:before {
         content: "\f067";
     }
 
-    .template-7_header .menu > ul > li:not(.menu-button) > a[aria-expanded=true] i:before {
+    .template-7_header .menu > ul > li:not(.menu-button) > a[aria-expanded=true] i.fa-caret-down:before {
         content: "\f068";
     }
 
